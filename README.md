@@ -67,6 +67,5 @@ Users should be able to:
 - Frontend Mentor - [@Aouragh Mohamed El Amine](https://www.frontendmentor.io/profile/AouraghMohamedElAmine)
 - Twitter - [@Amin02941392](https://twitter.com/Amin02941392)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 
