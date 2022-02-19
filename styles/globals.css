@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+ 
+.verticalLine {
+  position: absolute;
+
+  left: calc(50% - 4px);
+}
+.features{
+    overflow: visible;
+     
+ }
+
+
+.feature-image {
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 40px);
+}
+@media (max-width : 375px) {
+  .shortenMobile {
+    background-image: url("../assets/images/shortenMobile.svg");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: top right;
+  }
+  .boost{
+    background-image: url("../assets/images/bgBoostMobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top right;
+  }
+}
+@media (min-width : 376px) {
+  .shortenMobile {
+    background-image: url("../assets/images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top right;
+  }
+  .boost{
+    background-image: url("../assets/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top right;
+  }
+}
+@media (min-width : 1023px) {
+  .feature-image {
+    position: absolute;
+    top: -40px;
+    left: calc(10%);
+  }
+  
+}
