@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL:(https://github.com/AouraghMohamedElAmine/frontend-mentor-challenge)
+- Live Site URL: (https://url-shortener-omega-pink.vercel.app/)
 
 ## My process
 
