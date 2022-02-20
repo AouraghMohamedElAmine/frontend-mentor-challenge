@@ -2,7 +2,7 @@ import React from "react";
 
 function FooterComponent() {
   return (
-    <footer className=" text-center bg-darkBlue  lg:flex lg:px-20   justify-evenly lg:text-left  ">
+    <footer role="banner" className=" text-center bg-darkBlue  lg:flex lg:px-20   justify-evenly lg:text-left  ">
       <div className="font-bold text-white py-6 lg:py-0 lg:my-7 text-3xl ">Shortly</div>
       <div>
         <ul className="text-gray my-4">

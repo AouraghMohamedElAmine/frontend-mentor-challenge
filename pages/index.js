@@ -18,6 +18,7 @@ export default function Home() {
         <Image
           className=" translate-x-8s   block w-full 	"
           src={illustration}
+          alt='illustration'
         ></Image>
       </div>
 
@@ -37,6 +38,7 @@ export default function Home() {
           <Image
             className="translate-x-8  	"
             src={illustration}
+            alt='illustration'
           ></Image>
         </div>
       </div>

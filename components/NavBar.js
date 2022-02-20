@@ -11,11 +11,11 @@ import logo from '../assets/images/logo.svg'
          burger.current.classList.toggle("hidden")
     }
   return (
-    <nav>
+    <nav role="navigation">
 
 
 <div className="flex justify-between lg:hidden w-90% mx-auto  hover:text-darkViolet2 py-8 font-bold  ">
-    <div className="text-darkViolet text-2xl"><Image src={logo}></Image></div>
+    <div className="text-darkViolet text-2xl"><Image alt='illustration' src={logo}></Image></div>
     <div onClick={toggleNav} ><i className="text-darkBlue fas fa-bars text-2xl"></i></div>
 </div>
 
@@ -32,7 +32,7 @@ import logo from '../assets/images/logo.svg'
     <div className="flex w-3/6  ">
     <div className="flex  w-full items-center justify-end  h-full ">
     <Link  href="/Login"><a className=" hover:text-darkViolet2 py-4 block mx-6">Login</a></Link>  
-    <div className=" hover:text-darkViolet2  text-white py-4 block">     <button className="bg-cyan rounded-3xl h-11  px-6  font-bold    "> <Link href="/SignUp"><a>Sign Up</a></Link> </button> 
+    <div className=" hover:text-darkViolet2  text-white py-4 block">     <button className="bg-cyan rounded-3xl h-11  px-6  font-bold    "> Sign Up </button> 
 </div>
       </div>
     </div>
