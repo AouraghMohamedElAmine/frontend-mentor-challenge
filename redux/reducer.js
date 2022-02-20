@@ -1,12 +1,13 @@
-import { ADD_LINK, REMOVE_LINKS } from "./constants"
+import { ADD_LINK, REMOVE_LINKS, SET_COPIED_LINK } from "./constants"
 
-export const LinkReducer = (state = [], action) => {
+export const LinkReducer = (state = [ ], action) => {
     switch (action.type) {
       case ADD_LINK:
-        console.log(state);
-        return [...state ,action.payload]
+         return [...state ,action.payload]
+         case SET_COPIED_LINK:
+          return  action.payload 
       case REMOVE_LINKS:
-        return []
+         return []
       default:
         return state
     }

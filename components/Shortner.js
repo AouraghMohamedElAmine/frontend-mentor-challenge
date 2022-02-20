@@ -17,7 +17,9 @@ function Shortner() {
          dispatch(
           addlink({
             originalLink: link,
-            shortLink : data.result.short_link
+            shortLink : data.result.short_link,
+            id : Math.floor(Math.random()*1000) ,
+            copied : false
           })
         );
       } catch (error) {
@@ -27,10 +29,10 @@ function Shortner() {
   };
   return (
     <>
-      <div className="text-center  bg-darkViolet rounded-xl mx-auto lg:w-80% lg:flex justify-between items-center lg:p-12 p-8 shortenMobile my-8">
-        <div className="h-11 w-full   lg:mr-4 my-6 lg:w-9/12 block">
+      <div className="text-center  bg-darkViolet rounded-xl mx-auto lg:w-80% lg:flex justify-between items-center lg:px-12 p-8 shortenMobile my-8">
+        <div className="h-11 lg:h-14 my-6 w-full   lg:mr-4  lg:w-9/12 block">
           <input
-            className={` h-11 lg:h-12 w-full   lg:mb-0 px-3 outline-none rounded-lg  block  ${
+            className={` h-11 lg:h-14 w-full   lg:mb-0 px-3 outline-none rounded-lg  block  ${
               error ? "placeholder:text-red   border-2 border-red" : null
             } `}
             value={link}
@@ -47,7 +49,7 @@ function Shortner() {
 
         <button
           onClick={handleShortner}
-          className="bg-cyan rounded-lg h-11 lg:h-12 text-white hover:text-darkViolet2 font-bold   w-full lg:w-3/12 "
+          className="bg-cyan rounded-lg h-11 lg:h-14  text-white hover:text-darkViolet2 font-bold   w-full lg:w-3/12 "
         >
           Shorten It!
         </button>
